@@ -13,11 +13,11 @@
 
 
     <script id="script-template" type="text/x-handlebars-template" >
-      <article data-category={{category}} data-author={{author}}>
+      <article data-category="{{category}}" data-author="{{author}}">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
-            By <address><a href={{authorUrl}}>{{author}}</a></address>
+            By <address><a href="{{authorUrl}}">{{author}}</a></address>
             published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
           </div>
         </header>
@@ -25,6 +25,14 @@
         <a href="#" class="read-on">Read on &rarr;</a>
       </article>
     </script>
+
+    <!-- <script id="filter-template" type="text/x-handlebars-template">
+      <li>
+        <select id={{filter-name}}>
+          <option value="">-- Filter by {{filter-type}} --</option>
+        </select>
+      </li>
+    </script> -->
     <!--
       DONE: Add a script tag to hold the Handlebars template.
         - Be sure to give it a meaningful id attribute.
